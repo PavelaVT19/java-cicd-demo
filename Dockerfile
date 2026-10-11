@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY target/java-cicd-demo-1.0-SNAPSHOT.jar app.jar
 
-CMD ["java", "-cp", "app.jar", "com.example.App"]
+EXPOSE 8080
+
+CMD ["java", "-jar", "app.jar"]
